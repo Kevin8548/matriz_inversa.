@@ -8,14 +8,12 @@ public class Matriz_Inversa {
     public static BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
     public static String entrada;
 
-    // Instanciamos un objeto DecimalFormat para formatear los números con 2 decimales
     public static DecimalFormat df = new DecimalFormat("#.##");
 
     // imprimir matrices
     public static void imprimirMatriz(double[][] m) {
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
-                // Usamos df.format() para redondear y dar formato a los números
                 System.out.print(df.format(m[i][j]) + "   ");
             }
             System.out.println();
